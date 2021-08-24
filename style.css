@@ -33,6 +33,10 @@ color: #969696;
 }
 .first-page_connect_container_call_img {
   padding-right: 14px;
+
+}
+.first-page_connect_container_call_img img {
+  width: 20px;
 }
 .first-page_connect_container_login {
 font-family: PT Sans;
@@ -49,12 +53,12 @@ color: #969696;
 .first-page_connect_container_login_img img {
  padding-right: 14px;
   margin-top: 2px;
+  width: 20px;
 }
 .first-page_header {
   width: 58%;
   height: 80px;
   margin: 0 auto;
-  background: ;
   display: flex;
   justify-content: space-between;
 }
@@ -81,7 +85,6 @@ align-items: center;
 }
 .first-page_header_add_item {
   height: 100%;
-  color: ;
   width: auto;
   display: flex;
   align-items: center;
@@ -97,17 +100,18 @@ align-items: center;
 }
 .first-page_header_add_final_item {
   padding-left: 10px;
+ 
+}
+.first-page_header_add_final_item img {
+  width: 20px;
 }
 .first-page_basic {
-  background: url(https://i.ibb.co/Q6C4hh5/first-page-basic-background.png) no-repeat center;
+  background: url(images/first-page_basic_background.png) no repeat center;
   background-size: cover;
   min-height: 810px;
   padding-top: 160px;
   text-align: center;
-  
-}
-.first-page_basic img {
-  
+  width: 100%;
 }
 .first-page_basic_text {
  padding-top: 40px;
@@ -124,6 +128,7 @@ text-transform: uppercase;
 color: #FFFFFF;
  padding-bottom: 20px; 
 }
+
 .season {
   width: 100%;
   min-height: 730px;
@@ -193,7 +198,7 @@ color: #D0D0D0;
 .season_right {
   height: auto;
   width: 45%;
-  background: url(https://i.ibb.co/GdTfG7n/season-right-background.png) no-repeat center;
+  background: url(images/season_right_background.png) no-repeat center;
   background-size: 100% 100%;
 }
 .season_right_text {
@@ -433,7 +438,7 @@ color: #FFFFFF;
     width: 100%;
     min-height: 400px;
   background:  linear-gradient(0deg, rgba(15, 15, 15, 0.85), rgba(15, 15, 15, 0.85)),  #C4C4C4;
-  background-image: url(https://i.ibb.co/2FZv3J3/about-background.png);
+  background-image: url(images/about_background.png);
     background-size: cover;
   }
   .about a {
@@ -540,9 +545,85 @@ color: #FFFFFF;
   text-decoration-line: underline;
   color: #D0D0D0;
   }
+  @media screen and (max-width: 1500px) {
+    .first-page_header {
+      width: 90%;
+    }
+    .about_content {
+      width: 85%;
+    }
+  }
+  @media screen and (max-width: 1300px) {
+    .collection_right_content_button button {
+      width: 100px;
+      height: 50px;
+    }
+    .new_container {
+      width: 90%;
+    }
+  }
   @media screen and (max-width: 1122px) {
     .collection_right_content_button button {
       width: 100%;
       height: 40px;
     }
   }
+  @media screen and (max-width: 1100px) {
+    .first-page_connect_container {
+      width: 90%;
+    }
+    .about_content {
+      width: 100%;
+    }
+  }
+  @media screen and (max-width: 950px) {
+    .first-page_header {
+      height: 150px;
+    }
+    .first-page_header_add {
+      flex-direction: column;
+    }
+  }
+  @media screen and (max-width: 870px) {
+    .new_container {
+      width: 100%;
+    }
+    .new_container_row_inner_item_card_block img{
+      width: 70%;
+    }
+    .about_content_part {
+      width: 100%;
+      
+    }
+    .about_content_part_name {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+    .about_content {
+      flex-direction: column;
+    }
+    .about_content_part_email {
+      width: 50%;
+      margin-left: 0 auto;
+     padding-bottom: 20px;
+    }
+    .about_content_part_tags div {
+      display: block;
+      width: 70%;
+      
+      margin: 0 auto;
+    }
+    @media screen and (max-width: 760px) {
+      .collection_right_content_h {
+        font-size: 20px;
+      }
+      .our-brands {
+        min-height: 550px;
+      }
+      .our-brands_container_bottom_gallery {
+        flex-direction: column;
+      }
+    }
+  }
+  
+  
