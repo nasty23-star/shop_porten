@@ -199,7 +199,8 @@ color: #D0D0D0;
   height: auto;
   width: 45%;
   background: url(images/season_right_background.png) no-repeat center;
-  background-size: 100% 100%;
+   background-size: 100% 100% cover;
+  background-position: left 20%;
 }
 .season_right_text {
   padding-top: 484px;
